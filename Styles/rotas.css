@@ -1,0 +1,39 @@
+.rotas{
+    display: flex;
+    flex-flow: row wrap;
+}
+.rotas ul{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 0.5em;
+    border: 2px solid var(--cor2);
+    padding: 0 0 1em 0;
+    margin: 0;
+}
+.rotas ul h3{
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    height: 20vw;
+}
+.rotas ul li{
+    width: 100%;
+    color: var(--cor2);
+    padding: 0 1em;
+    font-weight: 600;
+}
+.rotas p{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    width: 100%;
+    padding: 1em 2em;
+    text-align: center;
+    margin: 0;
+}
