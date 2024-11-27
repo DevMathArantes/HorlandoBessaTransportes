@@ -18,6 +18,8 @@ footer h2{
     margin: 1em 0;
     border: 2px solid var(--cor1);
     border-radius: 10px;
+    width: 50%;
+    margin: 1em auto;
 }
 footer h3{
     font-size: 0.8rem;

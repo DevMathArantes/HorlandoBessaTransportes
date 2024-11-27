@@ -11,7 +11,7 @@ main{
     gap: 1em;
 }
 .negociar{
-    width: 50%;
+    width: 15em;
     background-color: var(--cor2);
     color: var(--cor1);
     padding: 1em;

@@ -17,11 +17,14 @@
 .rotas ul h3{
     width: 100%;
     font-size: 0.8rem;
-    text-align: center;
-    padding: 1em;
     background-color: var(--cor2);
     color: var(--cor1);
-    height: 20vw;
+    height: 5em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 }
 .rotas ul li{
     width: 100%;
@@ -36,4 +39,28 @@
     padding: 1em 2em;
     text-align: center;
     margin: 0;
+}
+
+@media screen and (min-width: 724px){
+    .rotas{
+        border-radius: 20px;
+    }
+    .rotas:hover{
+        box-shadow: 0px 0px 10px var(--cor3);
+    }
+    .embarque{
+        border-radius: 20px 0 0 0;
+    }
+    .embarque h3{
+        border-radius: 20px 0 0 0;
+    }
+    .destino{
+        border-radius: 0 20px 0 0;
+    }
+    .destino h3{
+        border-radius: 0 20px 0 0;
+    }
+    .rotas p{
+        border-radius: 0 0 20px 20px;
+    }
 }
