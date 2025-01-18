@@ -1,22 +1,215 @@
-main h2{
-    color: var(--cor2);
-    text-align: center;
-    padding: 1em;
-}
+/*Conteúdo principal*/
 main{
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/*Nav com redes sociais*/
+nav{
+    width: 100%;
+    background-color: var(--cor1);
+    box-shadow: 0px 0px 10px var(--cor3);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+nav h2{
+    width: 14em;
+    font-size: 1rem;
+    margin: 0;
+    color: var(--cor2);
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    justify-content: end;
+    padding: 0 1em;
+}
+nav ul img{
+    width: 1.5em;
+}
+nav ul a{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--cor4);
+}
+nav ul a span{
+    display: none;
+}
+
+/*Excursões*/
+.expositivo{
+    display: flex;
+    flex-direction: column;
+    width: 18em;
+    margin: 2em 0;
+    box-shadow: 0px 0px 20px var(--cor4);
+    border-radius: 10px;
+}
+.expositivoImagens{
+    display: flex;
+    flex-flow: row wrap;
+}
+.expositivoImagens img{
+    width: 50%;
+}
+.expositivoInfo{
+    padding: 2em 0.5em;
+    background-color: var(--cor1);
+    border-radius: 0 0 10px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 }
-.negociar{
-    width: 15em;
+.expositivoInfo h2{
+    color: var(--cor2);
+    border-bottom: 1px solid var(--cor2);
+}
+.expositivoInfo p{
+    color: var(--cor3);
+    font-weight: 600;
+    text-align: center;
+}
+.expositivoInfo a{
     background-color: var(--cor2);
     color: var(--cor1);
-    padding: 1em;
-    border: 0;
-    border-radius: 10px;
-    font-size: 1rem;
+    padding: 0.5em 2em;border-radius: 5px;
+}
+
+/*Veículos*/
+.veiculos{
+    width: 18em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.veiculos h2{
+    background-color: var(--cor2);
     text-align: center;
+    padding: 0.2em;
+    color: var(--cor1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--cor3);
+}
+.veiculo{
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--cor1);
+    box-shadow: 0px 0px 10px var(--cor3);
+}
+.veiculo img{
+    border-radius: 10px 0 0 10px;
+    width: 8em;
+}
+.veiculoInfo{
+    padding: 1em;
+}
+.veiculoInfo h3{
+    color: var(--cor2);
+}
+
+/*Área do estudante*/
+.estudante{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2em 0;
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+.estudante h2{
+    width: 100%;
+    text-align: center;
+}
+.estudante ul{
+    width: 12em;
+    border: 1px solid var(--cor1);
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.estudante h3{
+    padding: 0.5em 2em;
+    text-align: center;
+    border-bottom: 1px solid var(--cor1);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.estudante ul li{
+    padding: 0.5em 1em;
+    font-size: 0.7rem;
+}
+
+/*Destino*/
+.destinos{
+    width: 48em;
+    display: flex;
+    margin: 0 auto;
+    gap: 2em;
+}
+.destino{
+    width: 12em;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    box-shadow: 0px 0px 10px var(--cor4);
+}
+.destino img{
+    width: 100%;
+}
+.destinoInfo{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5em;
+    font-size: 0.8rem;
+}
+.destinoInfo h3{
+    margin: 0;
+    border-bottom: 1px solid var(--cor2);
+    width: 100%;
+}
+.destinoInfo p{
+    width: 100%;
+    margin: 0;
+}
+.destinoInfo a{
+    background-color: var(--cor2);
+    padding: 0.5em 2em;
+    color: var(--cor1);
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
+@media screen and (min-width: 724px){
+    nav ul a span{
+        display: block;
+    }
+}
+@media screen and (min-width: 1300px){
+    .veiculos{
+        margin-left: 5em;
+        width: 40em;
+    }
+    .veiculo img{
+        width: 10em;
+    }
 }

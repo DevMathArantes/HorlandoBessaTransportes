@@ -3,6 +3,10 @@ footer{
     color: var(--cor1);
     text-align: center;
     padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
 }
 footer a{
     display: flex;
@@ -15,11 +19,9 @@ footer a img{
     width: 1em;
 }
 footer h2{
-    margin: 1em 0;
     border: 2px solid var(--cor1);
     border-radius: 10px;
-    width: 50%;
-    margin: 1em auto;
+    width: 10em;
 }
 footer h3{
     font-size: 0.8rem;
